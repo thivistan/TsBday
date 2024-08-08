@@ -234,6 +234,10 @@ body {
   font-size: 2rem;
   font-weight: lighter;
 }
+lydia-dp {
+     width: 300px;  /* or whatever width you want */
+     height: 300px;  /* maintains aspect ratio */
+   }
 
 #replay {
   z-index: 3;
