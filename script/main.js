@@ -1,3 +1,4 @@
+
 // Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
@@ -73,7 +74,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=2.5"
+      "+=5"
     )
     .to(
       ".two",
@@ -88,6 +89,7 @@ const animationTimeline = () => {
       opacity: 0,
       y: 10
       // scale: 0.7
+      
     })
     .to(
       ".three",
@@ -137,7 +139,7 @@ const animationTimeline = () => {
       x: 10,
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff"
-    })
+    }, "+=2")
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
@@ -287,7 +289,7 @@ const animationTimeline = () => {
       ".last-smile",
       0.5,
       {
-        rotation: 90
+        rotation: 360
       },
       "+=1"
     );
